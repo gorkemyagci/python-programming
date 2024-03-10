@@ -1,0 +1,103 @@
+# PYTHON PROGRAMMING
+
+# Numbers
+9 # Integer
+9.2 # Float
+
+#Strings
+"Hello World" # String
+
+# type function
+
+type(9) # int
+
+# Print function
+
+# print("Hello World")
+
+# STRING METHODS
+
+# len
+a = "HELLO WORLD"
+len(a) # 11
+
+# upper & lower
+a.upper() # HELLO WORLD
+a.lower() # hello world
+# print(a.upper(), a.lower())
+
+a.islower() # False
+a.isupper() # True
+
+# replace
+a.replace("WORLD", "PYTHON") # HELLO PYTHON
+
+
+# strip
+text = "   Hello World   "
+text.strip() # Hello World # Remove spaces
+text = "***Hello World***"
+text.strip("*") # Hello World # Remove * characters
+
+# dir
+dir(a) # List of methods
+
+a.capitalize() # Hello world
+a.title() # Hello World
+
+
+# Substrings
+a[0] # H
+a[0:5] # HELLO
+# print(a[:3]) # HEL
+# print(a[3:7]) # LO W
+
+# Variables
+
+name = "John"
+surname = "Doe"
+age = 30
+hobbies = ["Python", "JavaScript", "React"]
+person = "{0} {1} is {2} years old and likes {3}".format(name, surname, age, hobbies)
+# print(person)
+
+# type conversion
+
+#first_number = input("Enter a number: ")
+#second_number = input("Enter another number: ")
+#result = int(first_number) + int(second_number)
+#print(result)
+
+
+int("9") # 9
+float("9.2") # 9.2
+float(9)
+type(str(9)) # str
+
+# print()
+# print("Hello", "World", sep = '_', end= "!\n")
+
+# Data Structures
+
+# Lists []
+
+nots = [90,80,70] 
+# print(type(nots))
+
+list = ["John", 30, True, 9.2, ["Python", "JavaScript", "React"]]
+# print(type(list))
+# print(len(list))
+
+# Indexing
+list[0] # John
+type(list[1])
+
+# concatenation
+
+all_list = [nots, list]
+# print(all_list[1])
+
+list[:3] # ['John', 30, True]
+all_list[1][4][1] # JavaScript
+all_list[:1] # [[90, 80, 70]]
+# print(all_list[:1][0])
