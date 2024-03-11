@@ -112,7 +112,7 @@
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "list = [\"John\", 30, True, 9.2, [\"Python\", \"JavaScript\", \"React\"]]\n# print(type(list))\n# print(len(list))\n# Indexing\nlist[0] # John\ntype(list[1])\n# concatenation\nall_list = [nots, list]\n# print(all_list[1])\nlist[:3] # ['John', 30, True]",
+        "peekOfCode": "list = [\"John\", 30, True, 9.2, [\"Python\", \"JavaScript\", \"React\"]]\n# print(type(list))\n# print(len(list))\n# Indexing\nlist[0] # John\ntype(list[1])\n# concatenation\nall_list = [nots, list]\n# print(all_list[1])\nlist[:3] # ['John', 30, True]",
         "detail": "main",
         "documentation": {}
     },
@@ -121,7 +121,178 @@
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "all_list = [nots, list]\n# print(all_list[1])\nlist[:3] # ['John', 30, True]\nall_list[1][4][1] # JavaScript\nall_list[:1] # [[90, 80, 70]]\n# print(all_list[:1][0])",
+        "peekOfCode": "all_list = [nots, list]\n# print(all_list[1])\nlist[:3] # ['John', 30, True]\nall_list[1][4][1] # JavaScript\nall_list[:1] # [[90, 80, 70]]\n# print(all_list[:1][0][0])\n# List Methods\nlist = [\"Ali\", \"Veli\", \"Görkem\"]\nlist[1] = \"Ahmet\" # Change the value\nlist[:len(list)] = \"Burak\", \"Mehmet\", \"Kemal\" # Change the values",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "list",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "list = [\"Ali\", \"Veli\", \"Görkem\"]\nlist[1] = \"Ahmet\" # Change the value\nlist[:len(list)] = \"Burak\", \"Mehmet\", \"Kemal\" # Change the values\n# Append\nlist.append(\"Veli\") # Add to the end of the list\nlist = list + [\"Görkem\"] # Add to the end of the list\n# print(dir(list))\nlist.append('Python')\nlist.remove('Python') # Remove the first occurrence of a value\n# Insert & Pop",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "list[1]",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "list[1] = \"Ahmet\" # Change the value\nlist[:len(list)] = \"Burak\", \"Mehmet\", \"Kemal\" # Change the values\n# Append\nlist.append(\"Veli\") # Add to the end of the list\nlist = list + [\"Görkem\"] # Add to the end of the list\n# print(dir(list))\nlist.append('Python')\nlist.remove('Python') # Remove the first occurrence of a value\n# Insert & Pop\nlist.insert(0,'Javascript') # Insert a value to a specific index",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "list[:len(list)]",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "list[:len(list)] = \"Burak\", \"Mehmet\", \"Kemal\" # Change the values\n# Append\nlist.append(\"Veli\") # Add to the end of the list\nlist = list + [\"Görkem\"] # Add to the end of the list\n# print(dir(list))\nlist.append('Python')\nlist.remove('Python') # Remove the first occurrence of a value\n# Insert & Pop\nlist.insert(0,'Javascript') # Insert a value to a specific index\nlist.pop(1) # Remove a value from a specific index",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "list",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "list = list + [\"Görkem\"] # Add to the end of the list\n# print(dir(list))\nlist.append('Python')\nlist.remove('Python') # Remove the first occurrence of a value\n# Insert & Pop\nlist.insert(0,'Javascript') # Insert a value to a specific index\nlist.pop(1) # Remove a value from a specific index\nlist.insert(10, \"React\") # If the index is greater than the length of the list, the value is added to the end of the list\nlist.insert(len(list), \"Test\") # Add to the end of the list\n# count",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "copy_list",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "copy_list = list.copy() # Shallow copy\nprint(copy_list)\n# extend\nlist.extend([\"a\",\"b\",10]) # Add multiple values to the end of the list\nprint(list)\n# index - find the index of a value\nlist.index(\"Veli\")\n# print(list.index(\"Veli\"))\n# reverse \nlist.reverse() # Reverse the list",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "numbers",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "numbers = [9,2,5,1,7,3,4,6,8]\nnumbers.sort() # Sort the list\nprint(numbers)\n# clear\nlist.clear() # Remove all items from the list\nprint(list)\n# Tuples - Immutable\nt = (\"Ali\",1,2,3,[10,20])\n# print(t)\nt = (\"item\")",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "t",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "t = (\"Ali\",1,2,3,[10,20])\n# print(t)\nt = (\"item\")\nt_1 = (\"item\",)\nprint(type(t)) # str\nprint(type(t_1)) # tupl\n# Dictionaries\nperson = {\n    \"name\": \"John\",\n    \"surname\": \"Doe\",",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "t",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "t = (\"item\")\nt_1 = (\"item\",)\nprint(type(t)) # str\nprint(type(t_1)) # tupl\n# Dictionaries\nperson = {\n    \"name\": \"John\",\n    \"surname\": \"Doe\",\n    \"age\": 30,\n    \"hobbies\": [\"Python\", \"JavaScript\", \"React\"]",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "t_1",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "t_1 = (\"item\",)\nprint(type(t)) # str\nprint(type(t_1)) # tupl\n# Dictionaries\nperson = {\n    \"name\": \"John\",\n    \"surname\": \"Doe\",\n    \"age\": 30,\n    \"hobbies\": [\"Python\", \"JavaScript\", \"React\"]\n}",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "person",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "person = {\n    \"name\": \"John\",\n    \"surname\": \"Doe\",\n    \"age\": 30,\n    \"hobbies\": [\"Python\", \"JavaScript\", \"React\"]\n}\n# Dictionary - Choose a value\nperson[\"name\"] # John\nperson.get(\"name\") # John\n# print(person.get(\"hobbies\")[0]) # Python",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "person[\"job\"]",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "person[\"job\"] = \"Developer\" # Add a value\nperson[\"name\"] = \"Görkem\" # Update a value\n# print(person)\n# Data Structures - Set\nl = [\"a\",\"b\",123]\ns = set(l)\n # tuple to set\nt = (\"a\",\"ali\")\ns = set(t)\ntext = \"ali_ali2_ali3\"",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "person[\"name\"]",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "person[\"name\"] = \"Görkem\" # Update a value\n# print(person)\n# Data Structures - Set\nl = [\"a\",\"b\",123]\ns = set(l)\n # tuple to set\nt = (\"a\",\"ali\")\ns = set(t)\ntext = \"ali_ali2_ali3\"\nprint(set(text))",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "l",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "l = [\"a\",\"b\",123]\ns = set(l)\n # tuple to set\nt = (\"a\",\"ali\")\ns = set(t)\ntext = \"ali_ali2_ali3\"\nprint(set(text))\n# set does't allow indexing\n# Set - Add a value - Remove a value\nl = [\"gelecegi\", \"yazanlar\"]",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "s",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "s = set(l)\n # tuple to set\nt = (\"a\",\"ali\")\ns = set(t)\ntext = \"ali_ali2_ali3\"\nprint(set(text))\n# set does't allow indexing\n# Set - Add a value - Remove a value\nl = [\"gelecegi\", \"yazanlar\"]\ns = set(l)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "t",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "t = (\"a\",\"ali\")\ns = set(t)\ntext = \"ali_ali2_ali3\"\nprint(set(text))\n# set does't allow indexing\n# Set - Add a value - Remove a value\nl = [\"gelecegi\", \"yazanlar\"]\ns = set(l)\ns.add(\"ile\")\ns.add(\"2024\")",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "s",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "s = set(t)\ntext = \"ali_ali2_ali3\"\nprint(set(text))\n# set does't allow indexing\n# Set - Add a value - Remove a value\nl = [\"gelecegi\", \"yazanlar\"]\ns = set(l)\ns.add(\"ile\")\ns.add(\"2024\")\n# print(s)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "text",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "text = \"ali_ali2_ali3\"\nprint(set(text))\n# set does't allow indexing\n# Set - Add a value - Remove a value\nl = [\"gelecegi\", \"yazanlar\"]\ns = set(l)\ns.add(\"ile\")\ns.add(\"2024\")\n# print(s)\ns.add(\"ile\") # Doesn't add the same value",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "l",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "l = [\"gelecegi\", \"yazanlar\"]\ns = set(l)\ns.add(\"ile\")\ns.add(\"2024\")\n# print(s)\ns.add(\"ile\") # Doesn't add the same value\ns.remove(\"ile\") # Remove a value - If the value does not exist, it gives an error\ns.discard(\"ile\") # Remove a value - If the value does not exist, it does not give an error",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "s",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "s = set(l)\ns.add(\"ile\")\ns.add(\"2024\")\n# print(s)\ns.add(\"ile\") # Doesn't add the same value\ns.remove(\"ile\") # Remove a value - If the value does not exist, it gives an error\ns.discard(\"ile\") # Remove a value - If the value does not exist, it does not give an error",
         "detail": "main",
         "documentation": {}
     }
