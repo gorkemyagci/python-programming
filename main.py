@@ -217,3 +217,58 @@ s.add("ile") # Doesn't add the same value
 
 s.remove("ile") # Remove a value - If the value does not exist, it gives an error
 s.discard("ile") # Remove a value - If the value does not exist, it does not give an error
+
+# Set - Union - Intersection - Difference
+
+# difference() - Returns the difference between two sets
+# intersection() - Returns the intersection of two sets - & operator
+# union - Returns the union of two sets - | operator
+# symmetric_difference() - Returns the symmetric difference between two sets - ^ operator
+
+# difference
+set1 = set([1,3,5])
+set2 = set([1,2,3])
+
+set1.difference(set2)
+# print(set1.difference(set2)) # {5}
+# print(set2.difference(set1)) # {2}
+
+# symmetric_difference
+set1.symmetric_difference(set2)
+# print(set1.symmetric_difference(set2)) # {2, 5}
+
+# intersection
+set1.intersection(set2) # {1,3} set1 & set2
+# print(set1.intersection(set2))
+# print(set1 & set2)
+
+# union
+set1.union(set2) # {1,2,3,5} set1 | set2
+# print(set1.union(set2))
+
+
+# iki kumenin kesisiminin bos olup olmadigini kontrol etme
+# print(set1.isdisjoint(set2)) # False
+
+# bir kumenin butun elemanlarinin baska bir kume icinde yer alip almadigini kontrol etme
+# print(set1.issubset(set2)) # False
+
+# bir kume diger kumenin alt kumesi mi
+# print(set1.issuperset(set)) # False
+
+
+# FUNCTIONS
+print("a","b", sep = "=")
+
+# How to define a function
+
+def square(x):
+    return x**2
+    
+print(square(5))
+
+def calculate_sum(*args):
+    return "Sum: " + str(sum(args))
+
+print(calculate_sum(1,2,3,4,5))
+print(calculate_sum(1,2,3,4,5,6,7,8,9,10))
