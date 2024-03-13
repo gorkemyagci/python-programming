@@ -270,5 +270,52 @@ print(square(5))
 def calculate_sum(*args):
     return "Sum: " + str(sum(args))
 
-print(calculate_sum(1,2,3,4,5))
-print(calculate_sum(1,2,3,4,5,6,7,8,9,10))
+
+calculate_sum(1,2,3,4,5,6,7,8,9,10)
+
+
+# Ön tanımlı argümanlar
+
+def sum(x = 0, y = 0):
+    return x + y
+
+print(sum(5,6))
+
+# Arümanların sırası
+
+def calculate(x,y,z):
+    return (x + y) * z
+
+# print(calculate(x = 5, y = 6, z = 7))
+
+# When should we use functions?
+
+# print((40+25)/90)
+
+def calculate(x,y,z):
+    return (x + y) / z
+
+print(round(calculate(40,25,90),2))
+
+
+x = calculate(40,25,90)
+print(x*2)
+
+# Local and Global Variables
+
+x = 10 # Global variable
+y = 20 # Global variable
+
+def test(x, y):
+    return x + y # Local variable
+
+test(5,6) # 11
+
+# how to access global variable in a function
+
+x = [] # Global variable
+
+def add_item(y):
+    x.append(y) # Access the global variable
+    return x
+

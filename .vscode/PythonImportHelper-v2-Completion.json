@@ -4,7 +4,7 @@
         "kind": 2,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "def square(x):\n    return x**2\nprint(square(5))\ndef calculate_sum(*args):\n    return \"Sum: \" + str(sum(args))\nprint(calculate_sum(1,2,3,4,5))\nprint(calculate_sum(1,2,3,4,5,6,7,8,9,10))",
+        "peekOfCode": "def square(x):\n    return x**2\nprint(square(5))\ndef calculate_sum(*args):\n    return \"Sum: \" + str(sum(args))\ncalculate_sum(1,2,3,4,5,6,7,8,9,10)\n# Ön tanımlı argümanlar\ndef sum(x = 0, y = 0):\n    return x + y\nprint(sum(5,6))",
         "detail": "main",
         "documentation": {}
     },
@@ -13,7 +13,52 @@
         "kind": 2,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "def calculate_sum(*args):\n    return \"Sum: \" + str(sum(args))\nprint(calculate_sum(1,2,3,4,5))\nprint(calculate_sum(1,2,3,4,5,6,7,8,9,10))",
+        "peekOfCode": "def calculate_sum(*args):\n    return \"Sum: \" + str(sum(args))\ncalculate_sum(1,2,3,4,5,6,7,8,9,10)\n# Ön tanımlı argümanlar\ndef sum(x = 0, y = 0):\n    return x + y\nprint(sum(5,6))\n# Arümanların sırası\ndef calculate(x,y,z):\n    return (x + y) * z",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "sum",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def sum(x = 0, y = 0):\n    return x + y\nprint(sum(5,6))\n# Arümanların sırası\ndef calculate(x,y,z):\n    return (x + y) * z\n# print(calculate(x = 5, y = 6, z = 7))\n# When should we use functions?\n# print((40+25)/90)\ndef calculate(x,y,z):",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "calculate",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def calculate(x,y,z):\n    return (x + y) * z\n# print(calculate(x = 5, y = 6, z = 7))\n# When should we use functions?\n# print((40+25)/90)\ndef calculate(x,y,z):\n    return (x + y) / z\nprint(round(calculate(40,25,90),2))\nx = calculate(40,25,90)\nprint(x*2)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "calculate",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def calculate(x,y,z):\n    return (x + y) / z\nprint(round(calculate(40,25,90),2))\nx = calculate(40,25,90)\nprint(x*2)\n# Local and Global Variables\nx = 10 # Global variable\ny = 20 # Global variable\ndef test(x, y):\n    return x + y # Local variable",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "test",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def test(x, y):\n    return x + y # Local variable\ntest(5,6) # 11\n# how to access global variable in a function\nx = [] # Global variable\ndef add_item(y):\n    x.append(y) # Access the global variable\n    return x",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "add_item",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def add_item(y):\n    x.append(y) # Access the global variable\n    return x",
         "detail": "main",
         "documentation": {}
     },
@@ -329,6 +374,42 @@
         "importPath": "main",
         "description": "main",
         "peekOfCode": "set2 = set([1,2,3])\nset1.difference(set2)\n# print(set1.difference(set2)) # {5}\n# print(set2.difference(set1)) # {2}\n# symmetric_difference\nset1.symmetric_difference(set2)\n# print(set1.symmetric_difference(set2)) # {2, 5}\n# intersection\nset1.intersection(set2) # {1,3} set1 & set2\n# print(set1.intersection(set2))",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "x = calculate(40,25,90)\nprint(x*2)\n# Local and Global Variables\nx = 10 # Global variable\ny = 20 # Global variable\ndef test(x, y):\n    return x + y # Local variable\ntest(5,6) # 11\n# how to access global variable in a function\nx = [] # Global variable",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "x = 10 # Global variable\ny = 20 # Global variable\ndef test(x, y):\n    return x + y # Local variable\ntest(5,6) # 11\n# how to access global variable in a function\nx = [] # Global variable\ndef add_item(y):\n    x.append(y) # Access the global variable\n    return x",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "y = 20 # Global variable\ndef test(x, y):\n    return x + y # Local variable\ntest(5,6) # 11\n# how to access global variable in a function\nx = [] # Global variable\ndef add_item(y):\n    x.append(y) # Access the global variable\n    return x",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "x = [] # Global variable\ndef add_item(y):\n    x.append(y) # Access the global variable\n    return x",
         "detail": "main",
         "documentation": {}
     }
