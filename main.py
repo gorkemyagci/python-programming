@@ -340,7 +340,7 @@ else:
     print("Invalid age")
     
 # mini_app
-
+'''
 max = 50000
 store_name = input("Enter the store name: ")
 store_sales = int(input("Enter the store sales: "))
@@ -351,3 +351,71 @@ elif store_sales == max:
     print("You won a bonus")
 else:
     print("You didn't win a bonus")
+'''
+    
+# LOOP - FOR
+
+students = ["Görkem", "Ali", "Veli", "Mehmet"]
+
+for student in students:
+    print(student)
+    
+# For example
+
+salary = [1000,2000,3000,4000,5000]
+new_salary = []
+
+for s in salary:
+    new_salary.append(s * 1.2)
+    
+# print(new_salary)
+
+# For with function
+
+def calculateSalary(salary):
+    return salary * 20/100 + salary
+
+new_salary = []
+
+for s in salary:
+    new_salary.append(calculateSalary(s))
+    
+# print(new_salary)
+
+# mini app
+# if, for and function
+
+salaries = [1000,2000,3000,4000,5000]
+
+def new_salary(salary):
+    if (salary < 3000):
+        return salary * 1.5
+    elif (salary >= 3000 and salary < 4000):
+        return salary * 1.3
+    else:
+        return salary * 1.2
+    
+new_salaries = []
+
+for s in salaries:
+    new_salaries.append(new_salary(s))
+    
+print(new_salaries)
+
+# break - continue
+
+# Here is an advanced example of using break and continue in a loop
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# We will iterate over the list and perform different actions based on the number
+for num in numbers:
+    # If the number is 5, we will skip the rest of the loop and continue with the next number
+    if num == 5:
+        print("Skipping 5")
+        continue
+    # If the number is 8, we will break the loop entirely
+    if num == 8:
+        print("Breaking on 8")
+        break
+    # If neither condition is met, we will simply print the number
+    print(num)
