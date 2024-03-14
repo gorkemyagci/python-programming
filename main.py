@@ -319,3 +319,35 @@ def add_item(y):
     x.append(y) # Access the global variable
     return x
 
+# CONTROL STRUCTURES
+
+# True - False
+
+max = 5000
+max == 4000 # False
+max == 5000 # True
+
+# if - else - elif
+
+age = 17
+required_age = 18
+
+if age >= required_age:
+    print("You can vote")
+elif age < required_age and age > 0:
+    print("You can't vote")
+else:
+    print("Invalid age")
+    
+# mini_app
+
+max = 50000
+store_name = input("Enter the store name: ")
+store_sales = int(input("Enter the store sales: "))
+
+if store_sales > max:
+    print("You won a bonus")
+elif store_sales == max:
+    print("You won a bonus")
+else:
+    print("You didn't win a bonus")

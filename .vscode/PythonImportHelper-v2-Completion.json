@@ -49,7 +49,7 @@
         "kind": 2,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "def test(x, y):\n    return x + y # Local variable\ntest(5,6) # 11\n# how to access global variable in a function\nx = [] # Global variable\ndef add_item(y):\n    x.append(y) # Access the global variable\n    return x",
+        "peekOfCode": "def test(x, y):\n    return x + y # Local variable\ntest(5,6) # 11\n# how to access global variable in a function\nx = [] # Global variable\ndef add_item(y):\n    x.append(y) # Access the global variable\n    return x\n# CONTROL STRUCTURES\n# True - False",
         "detail": "main",
         "documentation": {}
     },
@@ -58,7 +58,7 @@
         "kind": 2,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "def add_item(y):\n    x.append(y) # Access the global variable\n    return x",
+        "peekOfCode": "def add_item(y):\n    x.append(y) # Access the global variable\n    return x\n# CONTROL STRUCTURES\n# True - False\nmax = 5000\nmax == 4000 # False\nmax == 5000 # True\n# if - else - elif\nage = 17",
         "detail": "main",
         "documentation": {}
     },
@@ -400,7 +400,7 @@
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "y = 20 # Global variable\ndef test(x, y):\n    return x + y # Local variable\ntest(5,6) # 11\n# how to access global variable in a function\nx = [] # Global variable\ndef add_item(y):\n    x.append(y) # Access the global variable\n    return x",
+        "peekOfCode": "y = 20 # Global variable\ndef test(x, y):\n    return x + y # Local variable\ntest(5,6) # 11\n# how to access global variable in a function\nx = [] # Global variable\ndef add_item(y):\n    x.append(y) # Access the global variable\n    return x\n# CONTROL STRUCTURES",
         "detail": "main",
         "documentation": {}
     },
@@ -409,7 +409,61 @@
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "x = [] # Global variable\ndef add_item(y):\n    x.append(y) # Access the global variable\n    return x",
+        "peekOfCode": "x = [] # Global variable\ndef add_item(y):\n    x.append(y) # Access the global variable\n    return x\n# CONTROL STRUCTURES\n# True - False\nmax = 5000\nmax == 4000 # False\nmax == 5000 # True\n# if - else - elif",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "max",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "max = 5000\nmax == 4000 # False\nmax == 5000 # True\n# if - else - elif\nage = 17\nrequired_age = 18\nif age >= required_age:\n    print(\"You can vote\")\nelif age < required_age and age > 0:\n    print(\"You can't vote\")",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "age",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "age = 17\nrequired_age = 18\nif age >= required_age:\n    print(\"You can vote\")\nelif age < required_age and age > 0:\n    print(\"You can't vote\")\nelse:\n    print(\"Invalid age\")\n# mini_app\nmax = 50000",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "required_age",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "required_age = 18\nif age >= required_age:\n    print(\"You can vote\")\nelif age < required_age and age > 0:\n    print(\"You can't vote\")\nelse:\n    print(\"Invalid age\")\n# mini_app\nmax = 50000\nstore_name = input(\"Enter the store name: \")",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "max",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "max = 50000\nstore_name = input(\"Enter the store name: \")\nstore_sales = int(input(\"Enter the store sales: \"))\nif store_sales > max:\n    print(\"You won a bonus\")\nelif store_sales == max:\n    print(\"You won a bonus\")\nelse:\n    print(\"You didn't win a bonus\")",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "store_name",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "store_name = input(\"Enter the store name: \")\nstore_sales = int(input(\"Enter the store sales: \"))\nif store_sales > max:\n    print(\"You won a bonus\")\nelif store_sales == max:\n    print(\"You won a bonus\")\nelse:\n    print(\"You didn't win a bonus\")",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "store_sales",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "store_sales = int(input(\"Enter the store sales: \"))\nif store_sales > max:\n    print(\"You won a bonus\")\nelif store_sales == max:\n    print(\"You won a bonus\")\nelse:\n    print(\"You didn't win a bonus\")",
         "detail": "main",
         "documentation": {}
     }
