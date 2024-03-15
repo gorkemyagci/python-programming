@@ -1,5 +1,59 @@
 [
     {
+        "label": "DataScientist",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class DataScientist():\n    department = ''\n    sql = True\n    years_of_experience = 0\n    languages = []\nDataScientist.sql\nDataScientist.department\nDataScientist.years_of_experience\n# Changing the class attributes\nDataScientist.department = 'Data'",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "DataScientist",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class DataScientist():\n    languages = []\n    def __init__(self):\n        self.department = ''\n        self.sql = True\n        self.years_of_experience = 0\n        self.languages = []\nprint(DataScientist.languages)\nclass DataScientist():\n    employees = []",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "DataScientist",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class DataScientist():\n    employees = []\n    def __init__(self):\n        self.languages = []\n        self.department = ''\n    def add_language(self, new_lang):\n        self.languages.append(new_lang)\np1 = DataScientist()\np1.add_language('Javascript')\nprint(p1.languages) # Javascript",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "Employees",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class Employees():\n    def __init__(self, firstName, lastName, address):\n        self.firstName = firstName\n        self.lastName = lastName\n        self.address = address\nclass DataScientists(Employees):\n    def __init__(self, programming):\n        self.programming = programming\nclass MarketingDp(Employees):\n    def __init__(self, storyTelling):",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "DataScientists",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class DataScientists(Employees):\n    def __init__(self, programming):\n        self.programming = programming\nclass MarketingDp(Employees):\n    def __init__(self, storyTelling):\n        self.storyTelling = storyTelling\nemployee = Employees(\"John\",\"Doe\",\"Address\")\nprint(f\"{employee.firstName} {employee.lastName} {employee.address}\")",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "MarketingDp",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class MarketingDp(Employees):\n    def __init__(self, storyTelling):\n        self.storyTelling = storyTelling\nemployee = Employees(\"John\",\"Doe\",\"Address\")\nprint(f\"{employee.firstName} {employee.lastName} {employee.address}\")",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
         "label": "square",
         "kind": 2,
         "importPath": "main",
@@ -545,6 +599,87 @@
         "importPath": "main",
         "description": "main",
         "peekOfCode": "numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n# We will iterate over the list and perform different actions based on the number\nfor num in numbers:\n    # If the number is 5, we will skip the rest of the loop and continue with the next number\n    if num == 5:\n        print(\"Skipping 5\")\n        continue\n    # If the number is 8, we will break the loop entirely\n    if num == 8:\n        print(\"Breaking on 8\")",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "number",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "number = 1\nwhile number < 5:\n    print(f\"Number is {number}\")\n    number += 1\n# Object Oriented Programming - OOP - Class\n#class DataScientist:\n#    print('This is a class')\n# Class attributes\nclass DataScientist():\n    department = ''",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "DataScientist.department",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "DataScientist.department = 'Data'\n# print(DataScientist.department)\n# Class Instances\nds = DataScientist()\nds.department = 'Data'\nds.sql = True\nds.years_of_experience = 5\nds.languages.append('Python')\ntext = f\"Department: {ds.department}, SQL: {ds.sql}, Years of Experience: {ds.years_of_experience}, Languages: {ds.languages}\"\nprint(text)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "ds",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "ds = DataScientist()\nds.department = 'Data'\nds.sql = True\nds.years_of_experience = 5\nds.languages.append('Python')\ntext = f\"Department: {ds.department}, SQL: {ds.sql}, Years of Experience: {ds.years_of_experience}, Languages: {ds.languages}\"\nprint(text)\nclass DataScientist():\n    languages = []\n    def __init__(self):",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "ds.department",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "ds.department = 'Data'\nds.sql = True\nds.years_of_experience = 5\nds.languages.append('Python')\ntext = f\"Department: {ds.department}, SQL: {ds.sql}, Years of Experience: {ds.years_of_experience}, Languages: {ds.languages}\"\nprint(text)\nclass DataScientist():\n    languages = []\n    def __init__(self):\n        self.department = ''",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "ds.sql",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "ds.sql = True\nds.years_of_experience = 5\nds.languages.append('Python')\ntext = f\"Department: {ds.department}, SQL: {ds.sql}, Years of Experience: {ds.years_of_experience}, Languages: {ds.languages}\"\nprint(text)\nclass DataScientist():\n    languages = []\n    def __init__(self):\n        self.department = ''\n        self.sql = True",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "ds.years_of_experience",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "ds.years_of_experience = 5\nds.languages.append('Python')\ntext = f\"Department: {ds.department}, SQL: {ds.sql}, Years of Experience: {ds.years_of_experience}, Languages: {ds.languages}\"\nprint(text)\nclass DataScientist():\n    languages = []\n    def __init__(self):\n        self.department = ''\n        self.sql = True\n        self.years_of_experience = 0",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "text",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "text = f\"Department: {ds.department}, SQL: {ds.sql}, Years of Experience: {ds.years_of_experience}, Languages: {ds.languages}\"\nprint(text)\nclass DataScientist():\n    languages = []\n    def __init__(self):\n        self.department = ''\n        self.sql = True\n        self.years_of_experience = 0\n        self.languages = []\nprint(DataScientist.languages)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "p1",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "p1 = DataScientist()\np1.add_language('Javascript')\nprint(p1.languages) # Javascript\n# Inheritance\nclass Employees():\n    def __init__(self, firstName, lastName, address):\n        self.firstName = firstName\n        self.lastName = lastName\n        self.address = address\nclass DataScientists(Employees):",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "employee",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "employee = Employees(\"John\",\"Doe\",\"Address\")\nprint(f\"{employee.firstName} {employee.lastName} {employee.address}\")",
         "detail": "main",
         "documentation": {}
     }

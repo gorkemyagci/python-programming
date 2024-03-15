@@ -419,3 +419,83 @@ for num in numbers:
         break
     # If neither condition is met, we will simply print the number
     print(num)
+    
+# while
+
+number = 1
+
+while number < 5:
+    print(f"Number is {number}")
+    number += 1
+    
+
+# Object Oriented Programming - OOP - Class
+
+#class DataScientist:
+#    print('This is a class')
+    
+# Class attributes
+class DataScientist():
+    department = ''
+    sql = True
+    years_of_experience = 0
+    languages = []
+    
+DataScientist.sql
+DataScientist.department
+DataScientist.years_of_experience
+
+# Changing the class attributes
+DataScientist.department = 'Data'
+# print(DataScientist.department)
+
+# Class Instances
+ds = DataScientist()
+ds.department = 'Data'
+ds.sql = True
+ds.years_of_experience = 5
+ds.languages.append('Python')
+text = f"Department: {ds.department}, SQL: {ds.sql}, Years of Experience: {ds.years_of_experience}, Languages: {ds.languages}"
+print(text)
+
+class DataScientist():
+    languages = []
+    def __init__(self):
+        self.department = ''
+        self.sql = True
+        self.years_of_experience = 0
+        self.languages = []
+        
+print(DataScientist.languages)
+
+class DataScientist():
+    employees = []
+    def __init__(self):
+        self.languages = []
+        self.department = ''
+    def add_language(self, new_lang):
+        self.languages.append(new_lang)
+        
+p1 = DataScientist()
+p1.add_language('Javascript')
+print(p1.languages) # Javascript
+
+# Inheritance
+
+class Employees():
+    def __init__(self, firstName, lastName, address):
+        self.firstName = firstName
+        self.lastName = lastName
+        self.address = address
+        
+class DataScientists(Employees):
+    def __init__(self, programming):
+        self.programming = programming
+        
+        
+class MarketingDp(Employees):
+    def __init__(self, storyTelling):
+        self.storyTelling = storyTelling
+        
+employee = Employees("John","Doe","Address")
+print(f"{employee.firstName} {employee.lastName} {employee.address}")
