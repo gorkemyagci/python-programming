@@ -499,3 +499,135 @@ class MarketingDp(Employees):
         
 employee = Employees("John","Doe","Address")
 print(f"{employee.firstName} {employee.lastName} {employee.address}")
+
+
+# Fonksiyonel Programlama
+
+# Pure Function
+a = 5
+
+def impure_sum(b):
+    return b + a
+
+def pure_sum(a,b):
+    return a + b
+
+impure_sum(6)
+pure_sum(3,4)
+
+class LineCounter:
+    def __init__(self, filename):
+        self.file = open(filename, 'r')
+        self.lines = []
+        
+    def read(self):
+        self.lines = [line for line in self.file]
+    
+    def count(self):
+        return len(self.lines)
+
+lc = LineCounter('test.txt')
+lc.read()
+# print(lc.lines)
+# print(lc.count())
+
+
+def read(filename):
+    with open(filename, 'r') as f:
+        return [line for line in f]
+    
+def count(lines):
+    return len(lines)
+
+example_lines = read('test.txt')
+lines_count = count(example_lines)
+print(lines_count)
+
+# Anonymous Functions
+
+def old_sum(a, b):
+    return a + b
+
+old_sum(3,4)
+
+new_sum = lambda a,b : a + b
+new_sum(4,5)
+
+list = [('b',3),('c',8),('a',12),('z',1)]
+
+print(sorted(list, key = lambda x: x[1]))
+
+# Vectorel Operations
+
+a = [1,2,3,4]
+b = [2,3,4,5]
+
+ab = []
+
+for i in range(0,len(a)):
+    ab.append(a[i]*b[i])
+    
+# print(ab)
+
+# FP
+
+import numpy as np
+
+a = np.array([1,2,3,4,5])
+b = np.array([2,3,4,5,6])
+# print(a*b)
+
+# map & filter & reduce
+
+liste = [1,2,3,4,5]
+
+for i in list:
+    print(1+10)
+    
+# list(map(lambda x: x*10, liste))
+
+# filter
+
+liste = [1,2,3,4,5,6,7,8,9,10]
+# print(list(filter(lambda x: x % 2 == 0, liste)))
+
+# reduce
+
+from functools import reduce
+
+liste = [1,2,3,4]
+print(reduce(lambda a,b: a + b, liste))
+
+# Modul Olusturmak
+
+import CalculateModule as cm
+
+cm.new_salary(1000)
+cm.new_salary(2000)
+
+from CalculateModule import new_salary
+
+new_salary(5000)
+
+import CalculateModule as cm
+cm.salaries
+
+# Exceptions
+
+a = 10
+b = 0
+
+try:
+    print(a/b)
+except ZeroDivisionError:
+    print("ZeroDivisionError Error")
+    
+# type error
+
+a = 10
+b = "2"
+
+try:
+    print(a/b)
+except TypeError:
+    print("Type Error")
